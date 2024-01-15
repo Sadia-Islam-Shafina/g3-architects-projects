@@ -1,25 +1,23 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
 
 * {
     font-family: 'Work Sans', sans-serif;
-} 
-
-
-header{
- background: rgba(255,144,14,0.10);
- padding:50px 240px;
 }
 
-nav{
-    display:flex;
-    justify-content:space-between;
+
+header {
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-nav > ul {
-display:flex;
+nav>ul {
+    display: flex;
 
 }
 
@@ -27,70 +25,279 @@ nav li {
     list-style: none;
     margin-right: 30px;
     font-weight: 500;
-    font-size:1rem;
+    font-size: 1rem;
 }
 
-nav li a{
+nav li a {
     text-decoration: none;
     color: #424242;
 }
 
-.nav-title{
-    font-size:2.8rem;
-    font-weight:700;
-    color:#131313;
+.nav-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #131313;
 }
 
-.banner-container{
+.banner-container {
     max-width: 800px;
     text-align: center;
     margin: 0 auto;
 }
-.banner-title{
-    font-size:4rem;
+
+.banner-title {
+    font-size: 4rem;
     font-weight: 700;
-    color:131313;
+    color: 131313;
 }
 
-.banner-description{
+/* .banner-description{
     color:727272;
 
 
+} */
+.text-light-gray {
+    color: 727272;
+    font-size: 1rem;
 }
 
-.btn-primary{
-border-radius: 8px;
-background: #FF900E;
-background-color: #FF900E;
-color:#FFF;
-padding:20px 25px;
-cursor: pointer;
-border:0;
+.btn-primary {
+    border-radius: 8px;
+    background: #FF900E;
+    background-color: #FF900E;
+    color: #FFF;
+    padding: 20px 25px;
+    cursor: pointer;
+    border: 0;
 
 }
 
-.bannar img{
+.bannar img {
     margin-top: 20px;
-    width:100%;
-    
+    width: 100%;
+
 }
 
-@media screen and (max-width:576px){
-    header{
-        padding:20px;
-    }
 
-    nav{
-        flex-direction:column;
-    }
+/* main section of team .......................................*/
+
+.team-container {
+    display: flex;
+    align-items: center;
+    padding-left: 300px;
+    padding-right: 250px;
 }
 
-@media screen and (min-width:576px) and (max-width:990px){
+.team-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
 
-    header{
-        padding:20px;
+.teams-contain {
+    padding-left: 70px;
+    padding-right: 70px;
+
+}
+
+.teams-title {
+    font-size: 2.8rem;
+}
+
+.teams-title .fst {
+    color: #727272;
+    font-weight: 500;
+}
+
+.teams-title .snd {
+    color: #131313;
+    font-weight: 700;
+}
+
+.teams-title .third {
+    color: #FF900E;
+    font-weight: 700;
+}
+
+/* ........................feature css work............... */
+.features {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 240px;
+    margin-right: 240px;
+    gap: 50px;
+}
+
+.feature-content .card {
+    padding: 30px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.features .section-title {
+    border-left: 5px solid #FF900E;
+    padding-left: 10px;
+}
+
+.ten-years {
+
+
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    width: 342px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+
+}
+
+.ten-years h2 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.ten-years p {
+    font-size: 1.5rem;
+}
+.features img{
+    height:80%;
+    /* width: 100%; */
+    margin-left: 30px;
+}
+/* ..........................fact section................... */
+
+.fact {
+    padding-left: 240px;
+    padding-right: 240px;
+}
+
+.facts-card-container .card {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+
+    padding: 30px;
+
+}
+
+.facts-card-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.facts-card-container .card-stats {
+    font-size: 2.8rem;
+    color: #424242;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.facts-card-container .card-title {
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+
+/* ........................Sponsors part.............. */
+
+.sponsor {
+    /* align-items: center; */
+    text-align: center;
+    margin-left: 240px;
+    margin-right: 240px;
+}
+
+.sponsor .sponsor-title {
+
+    /* align-items: center;
+    text-align: center; */
+}
+
+.sponsor-image-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    align-items: center;
+
+}
+
+
+
+
+
+/* 
+................................................................;............. */
+
+@media screen and (max-width:576px) {
+    header {
+        padding: 20px;
     }
-    nav{
+
+    nav,
+    .team-container,
+    .features,
+    .sponsor-image-container {
         flex-direction: column;
     }
+
+    .team-img {
+        grid-template-columns: 1fr;
+    }
+.feature-img{
+    width:100%;
+    margin-left:0;
+}
+.features{padding:0;
+}
+    /* ata ami e korci video te nie       .team-container{                
+        padding-left:0;
+        padding-right: 0;
+    } */
+    .team-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .teams-contain {
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+    .ten-years{
+        width:300px;
+        position:static;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:990px) {
+
+    header {
+        padding: 20px;
+    }
+
+    nav,
+    .team-container,
+    .features,
+    .sponsor-image-container {
+        flex-direction: column;
+    }
+
+    .teams-contain {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* }
+    .team-container{                
+        padding-left:0;
+        padding-right: 0;
+    }
+    .team-img{
+        grid-template-columns: 1fr;
+    } */
 }
